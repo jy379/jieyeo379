@@ -1,0 +1,6 @@
+library(MASS)
+print(summary(cats))
+plot(Hwt ~ Bwt, data = cats)
+model <- lm(Hwt ~ Bwt, data = cats)
+print(summary(model))
+abline(model)
